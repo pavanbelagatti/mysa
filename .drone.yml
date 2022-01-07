@@ -7,8 +7,8 @@ workspace:
   path: src/github.com/pavanbelagatti/mysa/main
 
 steps:
-- name: docker
-  image: plugins/golang
+- name: test
+  image: golang
   commands:
   - go mod init
   - go get
@@ -16,7 +16,7 @@ steps:
 
 settings:
     # registry: docker.io
-    repo: pavansa/bangaloretour
+    repo: pavansa/mysa
     username:
       from_secret: docker_username
     password:
