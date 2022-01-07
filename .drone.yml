@@ -1,7 +1,7 @@
 kind: pipeline
 name: default
 
-
+steps:
 - name: docker  
   image: plugins/docker
   settings:
@@ -13,3 +13,5 @@ name: default
       from_secret: docker_password
     tags: 
       - latest
+
+
