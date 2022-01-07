@@ -12,3 +12,13 @@ steps:
   - go mod init
   - go get
   - go test
+  
+  settings:
+    # registry: docker.io
+    repo: pavansa/mysa
+    username:
+      from_secret: docker_username
+    password:
+      from_secret: docker_password
+    tags: 
+      - latest
