@@ -1,6 +1,6 @@
 kind: pipeline
-type: kubernetes
-name: default
+type: docker
+name: hello_world
 
 steps:
 - name: test
