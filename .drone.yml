@@ -1,7 +1,10 @@
 kind: pipeline
+type: docker
 name: default
+
 steps:
-- name: test
- image: golang:1.10-alpine
- commands:
-   - "go test"
+- name: display go version
+  image: golang
+  pull: if-not-exists
+  commands:
+  - go version
