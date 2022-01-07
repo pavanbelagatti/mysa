@@ -1,4 +1,5 @@
 kind: pipeline
+type: docker
 name: default
 
 workspace:
@@ -6,9 +7,19 @@ workspace:
   path: src/github.com/pavanbelagatti/mysa/main
 
 steps:
-- name: test
-  image: golang
+- name: docker
+  image: plugins/golang
   commands:
   - go mod init
   - go get
   - go test
+
+settings:
+    # registry: docker.io
+    repo: pavansa/bangaloretour
+    username:
+      from_secret: docker_username
+    password:
+      from_secret: docker_password
+    tags: 
+      - latest
