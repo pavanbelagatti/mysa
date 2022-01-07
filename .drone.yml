@@ -13,6 +13,8 @@ steps:
   - go get
   - go test
   
+ name: docker  
+  image: plugins/docker
   settings:
     # registry: docker.io
     repo: pavansa/mysa
