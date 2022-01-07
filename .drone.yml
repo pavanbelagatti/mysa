@@ -1,4 +1,6 @@
 kind: pipeline
+name: default
+
 
 - name: docker  
   image: plugins/docker
