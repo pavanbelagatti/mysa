@@ -1,2 +1,2 @@
-This is a simple example for testing in Go
+This is a simple example for testing in Go.
 Done successfully! 
