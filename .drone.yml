@@ -1,11 +1,13 @@
 kind: pipeline
-type: docker
-name: hello_world
+name: default
+
+workspace:
+  base: /go
+  path: src/github.com/pavanbelagatti/mysa/main
 
 steps:
 - name: test
   image: golang
   commands:
-  - go mod init
+  - go get
   - go test
-  - go build
