@@ -14,11 +14,11 @@ steps:
   - go get
   - go test
   
- - name: frontend
+- name: frontend
   image: node:6
   commands:
-  - npm install
-  - npm test
+    - npm install
+    - npm test
   
 - name: docker  
   image: plugins/docker
