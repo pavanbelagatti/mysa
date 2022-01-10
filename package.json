@@ -1,12 +1,11 @@
 {
-  "name" : "mysa",
-  "description" : "JavaScript's functional programming helper library.",
-  "homepage" : "http://documentcloud.github.com/underscore/",
-  "keywords" : ["util", "functional", "server", "client", "browser"],
-  "author" : "pavan <pavan@xyz.com>",
-  "contributors" : [],
-  "dependencies" : [],
-  "repository" : {"type": "git", "url": "https://github.com/pavanbelagatti/mysa"},
-  "main" : "underscore.js",
-  "version" : "1.1.6"
+  "name": "pavtiny",
+  "version": "1.0.0",
+  "description": "just an example",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "pavva",
+  "license": "ISC"
 }
